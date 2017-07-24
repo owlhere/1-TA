@@ -1,0 +1,29 @@
+#install github
+sudo apt-get install git 
+
+#konfigurasi username karo email sing kudu pada karo akun sing neng GitHub
+git config --global user.name "user_name" 
+git config --global user.email "email_id" 
+
+#gawe repositori
+git init namarepo
+cd namarepo
+
+#Gawe deskripsi
+gedit README
+
+#Menambah berkas
+git add README
+git add namafile
+
+#mengirim file
+git commit -m "komentar"
+
+#langkah selanjute digawe repositori neng GitHub
+
+#remote repository
+git remote add origin https://github.com/username/namarepo.git
+
+#kirim berkas
+git push origin master
+
